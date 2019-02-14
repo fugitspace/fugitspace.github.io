@@ -1,0 +1,8 @@
+SO, I got this Dell Latitude 7480 with 8GB memory, Intel Core i5 (quad-core), 256GB SSD.
+Its performance was superb when I first installed Ubuntu.
+I had issues with resolution at first, however through some tweaks I managed to get it configured 
+to my liking.
+However something was always bothering me. Always, at the middle of doing something great, my CPU fan
+would start making this loud noise, meaning it was overheating. This happened in most cases when I opened
+some websites on Google Chrome. Closing these sites would resolve the issue, well at least temporarily until 
+I opened that website again.
