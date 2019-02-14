@@ -1,0 +1,24 @@
+Recently, my friend had just setup a cloud instance running Ubuntu, and all of a sudden he saw different
+URLs being accessed from his server, and several unknown files listed.
+I used not to be so much involved with this because for all the previous projects, there was always someone 
+taking care of Server Administration. I felt useless to this friend, all I could do was provide some ideas
+on what he can do, mentioning technologies that I have heard of or I have used occasionally in the past.
+
+here is a short list of technologies that I have used for server security
+1. Use of RSA keys for authentication. never user the password
+2. Using fail2ban, a great daemon tool that monitors login attempts.
+The great advantage of fail2ban is that it blocks any activity that seems suspious, hence
+the need for the key authentication.
+
+You will most likely have a ~/.ssh directory. secure it with 700 mode and then create ~/.ssh/authorized_keys
+make yourself the owner of the this file.
+
+stop login from ssh
+nano /etc/ssh/sshd_config
+add the following
+
+PermitRootLogin no
+PasswordAuthentication no
+AllowUsers username@[ip_addr] username@[ip_addr]
+
+you may want to restart ssh service
