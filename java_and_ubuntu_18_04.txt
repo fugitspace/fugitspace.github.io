@@ -6,3 +6,8 @@ However something was always bothering me. Always, at the middle of doing someth
 would start making this loud noise, meaning it was overheating. This happened in most cases when I opened
 some websites on Google Chrome. Closing these sites would resolve the issue, well at least temporarily until 
 I opened that website again.
+
+My first setup had so many configs which am sure had left lots of hanging config and system files.
+So I decided to make a fresh install of Ubuntu 18.04.1
+Then the machine went back to normal, I could open almost any website now, (not sure I opened any of the previous)
+websites that had issues.
