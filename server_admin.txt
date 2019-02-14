@@ -10,6 +10,7 @@ here is a short list of technologies that I have used for server security
 The great advantage of fail2ban is that it blocks any activity that seems suspious, hence
 the need for the key authentication.
 
+
 You will most likely have a ~/.ssh directory. secure it with 700 mode and then create ~/.ssh/authorized_keys
 make yourself the owner of the this file.
 
@@ -22,3 +23,16 @@ PasswordAuthentication no
 AllowUsers username@[ip_addr] username@[ip_addr]
 
 you may want to restart ssh service
+
+
+setup a firewall.
+
+Ubuntu comes with ufw.
+to configure it to only open certain ports, running
+ufw allow from [ip_addr] to any port # to allow ssh for you only
+ufw allow 80 # for http
+ufw allow 443 # for https
+ufw enable # so enable the firewall
+
+Details: https://help.ubuntu.com/community/UFW
+
