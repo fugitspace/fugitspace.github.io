@@ -11,3 +11,11 @@ My first setup had so many configs which am sure had left lots of hanging config
 So I decided to make a fresh install of Ubuntu 18.04.1
 Then the machine went back to normal, I could open almost any website now, (not sure I opened any of the previous)
 websites that had issues.
+
+
+Then it was time to install Java. I always liked to install java using the webupd8 PPA, which is great for updates.
+Then something happened. Immediately after I installed JDK 8u221, and ran the command java -version just to confirm
+everything was alright, suddently the fan started making a very loud spin.
+Running top showed lots of memory and CPU were in use, and these signaled to some processes I couldn't immediately tell.
+But, java was the only new thing I had installed, and so decided to remove it right away.
+Then I went ahead and dowloaded the tarball from oracle website, extracted the rar
