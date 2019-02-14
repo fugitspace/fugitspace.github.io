@@ -32,3 +32,22 @@ for about two days non stop on this same laptop.
 But, for now I will conclude Java was the problem. I will take sometime to dig down why this was the problem. for the time
 being, let Java be the suspect number.
 
+How to install Java (not usign PPA)
+# Visit the Oracle website
+# Download the tarball for Ubuntu
+# Extract it to some location say /opt/jdk1.8.0_202
+# set JAVA_HOME variable in one of the environment config files ~/.bashrc, ~/.profile, /etc/bash.bashrc, etc
+ export JAVA_HOME=/opt/jdk1.8.0_202
+# sometimes you will need to compile or run java programs from the command line say. for this you need PATH to know
+where to find java executable files like java, javac, etc.
+# in the same file you edited above, enter
+export PATH=$PATH:$JAVA_HOME/bin
+
+# To make sure everything went well, 
+# Load the new config with the source command
+source filename (filename is the path to the file you edited above)
+# run echo $JAVA_HOME (should print the path to the jdk)
+# echo $PATH (the path should include the path to JAVA_HOME/bin) 
+
+$JAVA_HOME is an enviroment variable that all programs that run on a JVM will look for to locate JVM resource necessary for them to run
+$PATH variable holds the path to all the commands that we run from the terminal.
