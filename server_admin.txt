@@ -36,6 +36,23 @@ ufw enable # so enable the firewall
 
 Details: https://help.ubuntu.com/community/UFW
 
+Automatic Updates.
+It is not a good practice to enable automatic updates for everything on a server.
+block everything else
+edit
+nano /etc/apt/apt.conf.d/#periodic # (#) is some number
+update it so it looks like so
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Download-Upgradeable-Packages "1";
+APT::Periodic::AutocleanInterval "7";
+APT::Periodic::Unattended-Upgrade "1";
 
+allow security updates
+Edit this conf
+nano /etc/apt/apt.conf.d/#unattended-upgrades (#) some priority number
 
+Unattended-Upgrade::Allowed-Origins {
+        "Ubuntu lucid-security";
+//      "Ubuntu lucid-updates";
+};
 
