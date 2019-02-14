@@ -19,3 +19,16 @@ everything was alright, suddently the fan started making a very loud spin.
 Running top showed lots of memory and CPU were in use, and these signaled to some processes I couldn't immediately tell.
 But, java was the only new thing I had installed, and so decided to remove it right away.
 Then I went ahead and dowloaded the tarball from oracle website, extracted the rar
+I always like to put all custom stuff inside of /opt directory, and that is where I had put my Java.
+
+Then I set up JAVA_HOME in ~/.bash_aliases and ran java -version again.
+Am happily running my laptop until now without issues.
+
+I will keep monitoring in case that loud fan spin comes back and freezes my laptop.
+
+The reason why I switched to using Ubuntu linux in the December of 2008 was because of freezing Windows XP and
+the BSOD. SInce then, I never experienced my laptop freezing, even when I tried to run machine learning algorithms 
+for about two days non stop on this same laptop.
+But, for now I will conclude Java was the problem. I will take sometime to dig down why this was the problem. for the time
+being, let Java be the suspect number.
+
