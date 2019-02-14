@@ -9,7 +9,7 @@ here is a short list of technologies that I have used for server security
 2. Using fail2ban, a great daemon tool that monitors login attempts.
 The great advantage of fail2ban is that it blocks any activity that seems suspious, hence
 the need for the key authentication.
-
+Details: https://www.fail2ban.org/wiki/index.php/Main_Page
 
 You will most likely have a ~/.ssh directory. secure it with 700 mode and then create ~/.ssh/authorized_keys
 make yourself the owner of the this file.
@@ -35,4 +35,7 @@ ufw allow 443 # for https
 ufw enable # so enable the firewall
 
 Details: https://help.ubuntu.com/community/UFW
+
+
+
 
