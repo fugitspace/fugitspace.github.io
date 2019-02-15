@@ -11,4 +11,15 @@ but it leaves no one behind, as it doesn't use esoteric diagrams.
 
 The diagrams are mainly boxes each with a name, and Responsibilities and we specify Technologies and for Container and Component
 Its main components (the 4 Cs) include
+
 - Context Diagram
+    - this is the diagram that provides the big picture of the software system to be developed.
+    - it may indicate users and their roles (authenticated/unauthenticated)
+    - it also includes other (possible) external systems that the new system will interact with
+
+- Container Diagram
+    - this is a decomposition of the context diagram.
+    - it has specific containers like webapp, webservers, DBMSs, etc.
+
+- Component diagrams
+    - these are further decompositions of each the containers.
