@@ -1,0 +1,14 @@
+The C4 Model of Software Architecture.
+
+Software Architecture is the meeting point between Enterprise Architecture (how a software application is structured and all its properties), 
+Infrastructure, (The hardware systems), and the Users.
+
+Software Architecture should aim to provide the clear picture of the software system to be developed.
+Best way to communicate the Architecture of a software system just like other Architectural concepts is through diagrams.
+
+UML is a bit complex, you need to invest a good amount of time to use it well. the C4 model is kind of a simplified, laissez-faire approach,
+but it leaves no one behind, as it doesn't use esoteric diagrams.
+
+The diagrams are mainly boxes each with a name, and Responsibilities and we specify Technologies and for Container and Component
+Its main components (the 4 Cs) include
+- Context Diagram
