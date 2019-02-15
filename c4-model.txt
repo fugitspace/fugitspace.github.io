@@ -32,3 +32,10 @@ Its main components (the 4 Cs) include
         tend to lean more towards UML diagrams. they include: class diagrams, sequence diagrams, state machine diagrams, activitity diagrams, etc.
 - as noted earlier, only draw a diagram that is needed.
 - the diagram should aim at providing clarity to the team
+
+
+EXAMPLES:
+- think of systems like 
+    - public transport live feed system
+    - peer-to-peer road traffic streaming
+    - cross-career mobile money system. 
