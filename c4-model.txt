@@ -23,3 +23,12 @@ Its main components (the 4 Cs) include
 
 - Component diagrams
     - these are further decompositions of each the containers.
+    - these can be sub-systems, services, workflows, etc.
+    - these start getting more concrete in terms of Responsibilities and technologies.
+
+- Code diagrams:
+    - these are diagrams that in most cases will influence how the code will be written.
+    - while the previous three diagrams are somewhat free-style diagrams, these diagrams 
+        tend to lean more towards UML diagrams. they include: class diagrams, sequence diagrams, state machine diagrams, activitity diagrams, etc.
+- as noted earlier, only draw a diagram that is needed.
+- the diagram should aim at providing clarity to the team
