@@ -12,4 +12,38 @@ directly to pdf. cups-pdf comes in handy. You may need to take sometime to famil
  Most Unix systems come pre-installed with cups, and the command to print is simply lp.
 
 
- Use man lp for a detailed documentation. We will keep updating
+ Use man lp for a detailed documentation. We will keep updating this page, so feel free to bookmark it and
+ visit back later.
+
+ you can simply run 
+
+ lp filename.pdf (this will printy directly to your configured default printer)
+
+ to print to a specific printer
+ ld -d $PRINTERNAME filename.pdf
+
+ PRINTING IMAGES TO PDF.
+ You may want to install cups-pdf which installs a printer called CUPS-PDF in your system.
+ Any file that's sent to this printer will be converted to PDF. and by default it will be
+ saved in ~/PDF. (this can be configured otherwise)
+
+ Installation:
+ sudo apt install cupd-pdf
+
+ then 
+
+ lp mydocument.png (after it is done, open ~/PDF/)
+
+In a case where you have a large number of files to print you can run than as a job in a loop like
+for f in file1 file2 file3 file4 ...; 
+lp $f
+done
+this loop will go through each of the files and print them.
+
+then you can use pdftk to join the individual pdf files into one large pdf document.
+
+pdftk list-all-files-to-merge-here cat output merged-file-name.pdf
+
+Read more about pdftk here: https://www.pdflabs.com/docs/pdftk-cli-examples/
+ The administration of the cups printing pool can be done graphically through a web page at http://localhost:631
+
