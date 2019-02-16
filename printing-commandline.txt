@@ -1,0 +1,15 @@
+Ever wondered how you can print from command line?
+being a linux user and knowing how to print from commandline
+will help you automate the printing process.
+Consider a case when you have a long list of files to print, let alone printing images.
+
+Printing images directly to paper can be tricky. Consider photographed A4 images and you want to print them
+directly to pdf. cups-pdf comes in handy. You may need to take sometime to familiarize with the tool
+ especially being able to configure it for optimized performance.
+
+ Unix-like systems use CUPS (a standards bases) Common Unix Printing System. Thanks to Apple.Inc
+
+ Most Unix systems come pre-installed with cups, and the command to print is simply lp.
+
+
+ Use man lp for a detailed documentation. We will keep updating
